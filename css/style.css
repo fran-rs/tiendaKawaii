@@ -12,7 +12,6 @@
   --font-principal: "Montserrat Alternates", sans-serif;
   --font-paragraph: "Montserrat Alternates", sans-serif;
 }
-
 hmtl {
   box-sizing: border-box;
   font-size: 62.5%;
@@ -22,8 +21,7 @@ hmtl {
 * after {
   box-sizing: inherit;
 }
-
-/* RESET */
+/*! RESET */
 body {
   background-color: var(--color-background);
   font-size: 16px;
@@ -37,7 +35,6 @@ p {
   font-family: var(--font-paragraph);
   color: var(--color-text);
 }
-
 a {
   text-decoration: none;
 }
@@ -49,7 +46,8 @@ img {
   margin: 0 auto;
 }
 h1,
-h2 {
+h2,
+h3 {
   text-align: center;
   color: var(--color-heading);
   font-family: var(--font-principal);
@@ -68,8 +66,7 @@ p {
   color: var(--color-heading);
   font-family: var(--font-principal);
 }
-
-/* HEADER */
+/*! HEADER */
 .header {
   display: flex;
   justify-content: center;
@@ -87,8 +84,7 @@ p {
 .header-link h1 {
   margin: 0;
 }
-
-/* NAV */
+/*! NAV */
 .nav {
   display: flex;
   justify-content: space-evenly;
@@ -107,7 +103,7 @@ p {
 .nav-link-active {
   color: var(--color-background);
 }
-/* FOOTER */
+/*! FOOTER */
 .footer {
   background-color: var(--color-footer-background);
   display: flex;
@@ -115,8 +111,9 @@ p {
   align-items: center;
   gap: 16px;
   padding: 24px 0 32px 0;
+  margin-top: 10px;
 }
-footer h2 {
+footer h3 {
   margin: 0;
 }
 footer img {
@@ -126,16 +123,15 @@ footer img {
   display: flex;
   gap: 20px;
 }
-
 footer p {
   margin: 0;
 }
-/* GRID INDEX */
+/*! GRID INDEX */
 .grid-galeria {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 250px;
+  grid-auto-rows: 380px;
   gap: 15px;
 }
 .grid-galeria div {
@@ -158,16 +154,151 @@ footer p {
 .img-8 {
   grid-row: span 2;
 }
-
 .grid-galeria div img {
   width: 100%;
-  height: 100%;
+  height: 70%;
   object-fit: cover;
 }
-
-.producto-informacion {
+.producto {
+  background-color: var(--color-accent);
+  padding: 5px;
 }
 .producto-nombre {
+  font-size: 20px;
 }
 .producto-precio {
+  font-size: 15px;
+  font-style: bold;
+  color: var(--color-text);
+}
+.producto-nombre,
+.producto-precio {
+  font-family: var(--font-principal);
+  margin: 10px 0;
+  text-align: center;
+  line-height: 1.2;
+}
+/*! MEDIA QUERY */
+@media screen and (max-width: 650px) {
+  .header {
+    flex-direction: column;
+    position: static;
+  }
+  h2 {
+    margin: 5px 5px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 460px) {
+  header nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  header nav ul li {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .grid-galeria {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 220px;
+  }
+  .grid-galeria div {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .img-5 {
+    grid-column: span 2;
+  }
+}
+@media screen and (max-width: 450px) {
+  .grid-galeria {
+    grid-template-columns: 1fr;
+  }
+  h1 {
+    font-size: 50px;
+  }
+}
+/*! Nosotros */
+.nosotros {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+@media (min-width: 768px) {
+  .nosotros {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px;
+  }
+}
+.nosotros-imagen {
+  grid-row: 1/ 2;
+  width: 100%;
+  height: 350px;
+}
+@media (min-width: 768px) {
+  .nosotros-imagen {
+    grid-column: 2/3;
+  }
+}
+
+/*! Bloques */
+.bloques {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+@media (min-width: 768px) {
+  .bloques {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.bloque {
+  text-align: center;
+}
+.bloque-imagen {
+  width: 100%;
+}
+.bloque-titulo {
+  margin: 0;
+}
+
+/*! PRODUCTOS.html*/
+.products-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 0;
+  flex-wrap: wrap;
+}
+
+.productos div {
+  border: 3px solid var(--color-realce);
+  width: 255px;
+  height: 350px;
+  text-align: center;
+  display: inline-block;
+}
+.productos div h3 {
+  margin: 0;
+  background-color: var(--color-background);
+  padding: 10px 0;
+}
+.productos div p {
+  color: var(--color-text);
+  font-size: 30px;
+  margin: 10px;
+}
+.productos div a {
+  text-decoration: none;
+  color: var(--color-text);
+  background-color: var(--color-button);
+  padding: 5px;
+}
+.productos div img {
+  width: 100%;
+  height: 200px;
 }
