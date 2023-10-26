@@ -302,3 +302,17 @@ footer p {
   width: 100%;
   height: 200px;
 }
+/*! Blog */
+.video {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.contenedor img {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
