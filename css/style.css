@@ -21,7 +21,7 @@ hmtl {
 * after {
   box-sizing: inherit;
 }
-/*! RESET */
+/* RESET */
 body {
   background-color: var(--color-background);
   font-size: 16px;
@@ -39,7 +39,7 @@ a {
   text-decoration: none;
 }
 img {
-  max-width: 100%;
+  width: 100%;
 }
 .container {
   max-width: 1000px;
@@ -66,7 +66,12 @@ p {
   color: var(--color-heading);
   font-family: var(--font-principal);
 }
-/*! HEADER */
+/* GLOBALS */
+.padding-layout {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+/* HEADER */
 .header {
   display: flex;
   justify-content: center;
@@ -84,7 +89,7 @@ p {
 .header-link h1 {
   margin: 0;
 }
-/*! NAV */
+/* NAV */
 .nav {
   display: flex;
   justify-content: space-evenly;
@@ -103,7 +108,7 @@ p {
 .nav-link-active {
   color: var(--color-background);
 }
-/*! FOOTER */
+/* FOOTER */
 .footer {
   background-color: var(--color-footer-background);
   display: flex;
@@ -126,7 +131,7 @@ footer img {
 footer p {
   margin: 0;
 }
-/*! GRID INDEX */
+/* GRID INDEX */
 .grid-galeria {
   width: 100%;
   display: grid;
@@ -178,6 +183,84 @@ footer p {
   text-align: center;
   line-height: 1.2;
 }
+
+/* Nosotros */
+.nosotros {
+  display: grid;
+  grid-template-rows: repeat(2, auto);
+}
+
+.nosotros-imagen {
+  grid-row: 1/ 2;
+  width: 100%;
+  height: 350px;
+}
+
+/* Bloques */
+.bloques {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.bloque {
+  text-align: center;
+}
+.bloque-imagen {
+  width: 100%;
+}
+.bloque-titulo {
+  margin: 0;
+}
+
+/* productos */
+.products-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 24px 0;
+  flex-wrap: wrap;
+}
+
+.card {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.producto .nombre-producto {
+  margin: 8px 0;
+}
+
+.producto .btn {
+  border: none;
+  background-color: var(--color-heading);
+  padding: 12px 20px;
+  width: fit-content;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  color: var(--color-accent);
+}
+
+
+/*! Blog */
+.video {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.contenedor img {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 /*! MEDIA QUERY */
 @media screen and (max-width: 650px) {
   .header {
@@ -222,97 +305,19 @@ footer p {
     font-size: 50px;
   }
 }
-/*! Nosotros */
-.nosotros {
-  display: grid;
-  grid-template-rows: repeat(2, auto);
-}
-
 @media (min-width: 768px) {
   .nosotros {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
   }
 }
-.nosotros-imagen {
-  grid-row: 1/ 2;
-  width: 100%;
-  height: 350px;
-}
 @media (min-width: 768px) {
   .nosotros-imagen {
     grid-column: 2/3;
   }
 }
-
-/*! Bloques */
-.bloques {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
 @media (min-width: 768px) {
   .bloques {
     grid-template-columns: repeat(4, 1fr);
   }
-}
-.bloque {
-  text-align: center;
-}
-.bloque-imagen {
-  width: 100%;
-}
-.bloque-titulo {
-  margin: 0;
-}
-
-/*! PRODUCTOS.html*/
-.products-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  padding: 24px 0;
-  flex-wrap: wrap;
-}
-
-.productos div {
-  border: 3px solid var(--color-realce);
-  width: 255px;
-  height: 350px;
-  text-align: center;
-  display: inline-block;
-}
-.productos div h3 {
-  margin: 0;
-  background-color: var(--color-background);
-  padding: 10px 0;
-}
-.productos div p {
-  color: var(--color-text);
-  font-size: 30px;
-  margin: 10px;
-}
-.productos div a {
-  text-decoration: none;
-  color: var(--color-text);
-  background-color: var(--color-button);
-  padding: 5px;
-}
-.productos div img {
-  width: 100%;
-  height: 200px;
-}
-/*! Blog */
-.video {
-  display: flex;
-  justify-content: center;
-  padding: 20px 0;
-  gap: 20px;
-}
-
-.contenedor img {
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
 }
