@@ -3,8 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
     <title>CandyCute</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap js (defer) -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
@@ -16,29 +30,54 @@
         <h1>CandyCute</h1>
       </a>
     </header>
-    <nav>
-      <ul class="nav">
-        <li>
-          <a class="nav-link nav-link-active" href="./index.html">Inicio</a>
-        </li>
-        <li><a class="nav-link" href="pages/productos.html">Productos</a></li>
-        <li><a class="nav-link" href="pages/nosotros.html">Nosotros</a></li>
-        <li><a class="nav-link" href="./blog.html">Blog</a></li>
-        <li><a class="nav-link" href="pages/contacto.html">Contacto</a></li>
-      </ul>
+
+    <nav class="nav navbar navbar-expand-lg mt-3 mb-4">
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class=" nav navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link nav-link-active" href="./index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/productos.html">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <main class="container">
-      <h2>Los Más Populares</h2>
+
+    <main class="container mb-5">
+      <h2 class="mb-4">Los Más Populares</h2>
       <section class="grid-galeria">
         <div class="producto">
           <a href="pages/productos.html">
             <img
               class="producto-imagen"
               src="./img/tazon-mug-de-corazon.jpg"
-              alt="lampara de velador"
+              alt="tazon forma de corazon"
             />
             <div class="producto-informacion">
-              <p class="producto-nombre">Lámpara velador</p>
+              <p class="producto-nombre">Mug de corazón</p>
               <p class="producto-precio">$25</p>
             </div>
           </a>
@@ -62,11 +101,11 @@
           <a href="pages/productos.html">
             <img
               class="producto-imagen"
-              src="./img/alcancia-kawaii-my-melody-cinnamoroll-.jpg"
-              alt="Alfombrilla escritorio"
+              src="./img/reloj-despertador.jpg"
+              alt="reloj despertador digital"
             />
             <div class="producto-informacion">
-              <p class="producto-nombre">Alfombrilla de Escritorio</p>
+              <p class="producto-nombre">Reloj Despertador</p>
               <p class="producto-precio">$30</p>
             </div>
           </a>
@@ -76,11 +115,11 @@
           <a href="pages/productos.html">
             <img
               class="producto-imagen"
-              src="./img/cinta-adhesiva.jpg"
-              alt="cinta washitape"
+              src="./img/teclado3.jpg"
+              alt="teclado"
             />
             <div class="producto-informacion">
-              <p class="producto-nombre">Cinta adhesiva</p>
+              <p class="producto-nombre">Teclado</p>
               <p class="producto-precio">$10</p>
             </div>
           </a>
