@@ -14,7 +14,7 @@
   --font-principal: "Montserrat Alternates", sans-serif;
   --font-paragraph: "Montserrat Alternates", sans-serif;
 }
-hmtl {
+/* hmtl {
   box-sizing: border-box;
   font-size: 62.5%; 
 }
@@ -22,7 +22,7 @@ hmtl {
 *:before,
 * after {
   box-sizing: inherit; 
-}
+} */
 /* RESET */
 body {
   background-color: var(--color-background);
