@@ -1,0 +1,20 @@
+h1,
+h2,
+h3 {
+  text-align: center; 
+  color: var(--color-heading);
+  font-family: var(--font-principal);
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 25px;
+}
+.padding-layout {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
