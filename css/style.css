@@ -347,7 +347,7 @@ footer p {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .producto {
+  .products .producto {
     width: 300px;
   }
 
@@ -363,7 +363,7 @@ footer p {
 
 }
 @media (min-width: 990px) {
-  .producto {
+  .products .producto {
     width: 250px;
   }
 

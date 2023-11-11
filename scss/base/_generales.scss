@@ -1,3 +1,49 @@
+// 1. copiar todo el css tal cual
+// 2. reemplazar las variables
+// 3. ordenarlo por estructura del index
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: var(--color-heading);
+  font-family: var(--font-principal);
+}
+h1 {
+  font-size: 60px;
+}
+h2 {
+  font-size: 40px;
+}
+h3 {
+  font-size: 25px;
+}
+.padding-layout {
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+body {
+  background-color: var(--color-background);
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  height: 100vh;
+}
+p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: var(--font-paragraph);
+  color: var(--color-text-paragraph);
+  margin: 8px 0;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
 h1,
 h2,
 h3 {
@@ -15,6 +61,6 @@ h3 {
   font-size: 25px;
 }
 .padding-layout {
-    padding-left: 120px;
-    padding-right: 120px;
-  }
+  padding-left: 120px;
+  padding-right: 120px;
+}

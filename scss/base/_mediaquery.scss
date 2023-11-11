@@ -1,0 +1,95 @@
+// 1. copiar todo el css tal cual
+// 2. reemplazar las variables
+// 3. ordenarlo por estructura del index
+
+@media screen and (max-width: 650px) {
+    .header {
+      flex-direction: column;
+      position: static;
+    }
+    h2 {
+      margin: 5px 5px;
+    }
+    h3 {
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    header nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+    header nav ul li {
+      margin: 0;
+    }
+  
+    
+  }
+  
+  @media screen and (max-width: 950px) {
+    .grid-galeria {
+      grid-template-columns: 1fr 1fr;
+      grid-auto-rows: 220px;
+    }
+    .grid-galeria div {
+      grid-column: span 1;
+      grid-row: span 1;
+    }
+    .img-5 {
+      grid-column: span 2;
+    }  
+  }
+  @media screen and (max-width: 450px) {
+  
+  
+    .grid-galeria {
+      grid-template-columns: 1fr;
+    }
+    h1 {
+      font-size: 40px;
+    }
+  }
+  @media (min-width: 768px) {
+    .nosotros {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 10px;
+    }
+  
+    .products-container {
+      justify-content: space-between;
+    }
+  }
+  
+  
+  @media (min-width: 768px) {
+    .nosotros-imagen {
+      grid-column: 2/3;
+    }
+  
+    .bloques {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  
+    .products .producto {
+      width: 300px;
+    }
+  
+    .producto .btn {
+  
+      width: fit-content;
+  
+    
+    }
+    .header-logo {
+      display: block;
+    }
+  
+  }
+  @media (min-width: 990px) {
+    .products .producto {
+      width: 250px;
+    }
+  
+  
+  }
+  
