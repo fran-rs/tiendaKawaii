@@ -1,18 +1,21 @@
 .header {
-    display: flex;
-    justify-content: center;
-    margin-top: 8px;
-  }
-  .header-logo {
-    max-width: 80px;
-    display: none;
-  }
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+
   .header-link {
     display: flex;
     gap: 8px;
     align-items: center;
     padding: 8px;
+
+    .header-logo {
+      max-width: 80px;
+      display: none;
+    }
   }
-  .header-link h1 {
-    margin: 0;
-  }
+}
+
+.header-link h1 {
+  margin: 0;
+}
