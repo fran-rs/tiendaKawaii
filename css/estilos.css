@@ -24,7 +24,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
-  height: 100vh; }
+  height: 100%; }
 
 p {
   text-align: center;
@@ -78,21 +78,64 @@ h3 {
 .nav-link-active {
   color: #ffc0cb; }
 
-.header {
+.fixed {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #ffc0cb; }
+  .fixed .header {
+    display: none;
+    justify-content: center;
+    margin-top: 8px; }
+    .fixed .header .header-link {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      padding: 8px; }
+      .fixed .header .header-link .header-logo {
+        max-width: 80px;
+        display: none; }
+  .fixed .header-link h1 {
+    margin: 0; }
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  background-image: url("./../../img/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   display: flex;
   justify-content: center;
-  margin-top: 8px; }
-  .header .header-link {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    padding: 8px; }
-    .header .header-link .header-logo {
-      max-width: 80px;
-      display: none; }
+  align-items: center; }
+  .hero .hero-texto {
+    z-index: 1;
+    padding: 20px 24px; }
+    .hero .hero-texto h2 {
+      color: #ffffff;
+      font-weight: 700; }
+    .hero .hero-texto p {
+      color: #e6e6fa;
+      font-size: 16px; }
 
-.header-link h1 {
-  margin: 0; }
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.header-texto {
+  text-align: center; }
+
+.no-margin {
+  margin: 0;
+  text-align: center; }
 
 .grid-galeria {
   width: 100%;
@@ -258,9 +301,11 @@ h3 {
     width: 300px; }
   .producto .btn {
     width: fit-content; }
-  .header .header-link .header-logo {
+  .fixed .header .header-link .header-logo {
     display: block; } }
 
 @media (min-width: 990px) {
   .products .producto {
-    width: 250px; } }
+    width: 250px; }
+  .fixed .header {
+    display: flex; } }

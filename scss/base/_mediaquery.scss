@@ -24,7 +24,6 @@
   }
 }
 
-
 @media screen and (max-width: 950px) {
   .grid-galeria {
     grid-template-columns: 1fr 1fr;
@@ -41,7 +40,6 @@
       object-fit: scale-down;
     }
   }
-
 }
 @media screen and (max-width: 450px) {
   .grid-galeria {
@@ -78,12 +76,19 @@
   .producto .btn {
     width: fit-content;
   }
-  .header .header-link .header-logo {
-    display: block;
+  .fixed {
+    .header .header-link .header-logo {
+      display: block;
+    }
   }
 }
 @media (min-width: 990px) {
   .products .producto {
     width: 250px;
+  }
+  .fixed {
+    .header {
+      display: flex;
+    }
   }
 }

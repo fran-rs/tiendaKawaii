@@ -1,7 +1,46 @@
-// 1. copiar todo el css tal cual
-// 2. reemplazar las variables
-// 3. ordenarlo por estructura del index
+// HERO SECTION
+.hero {
+  position: relative;
+  width: 100%;
+  height: 25rem;
+  background-image: url("./../../img/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  .hero-texto {
+    z-index: 11111;
+    padding: 20px 24px;
+    h2 {
+      color: $color-white;
+      font-weight: 700;
+    }
+    p {
+      color: $color-accent;
+      font-size: 16px;
+    }
+  }
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.header-texto {
+  text-align: center;
+}
+.no-margin {
+  margin: 0;
+  text-align: center;
+}
 // INDEX
 .grid-galeria {
   width: 100%;
@@ -133,4 +172,3 @@
     width: 450px;
   }
 }
-

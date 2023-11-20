@@ -1,22 +1,29 @@
-.header {
-  display: flex;
-  justify-content: center;
-  margin-top: 8px;
+.fixed {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: $color-background;
+  .header {
+    display: none;
+    justify-content: center;
+    margin-top: 8px;
 
-  .header-link {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    padding: 8px;
-    
+    .header-link {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      padding: 8px;
 
-    .header-logo {
-      max-width: 80px;
-      display: none;
+      .header-logo {
+        max-width: 80px;
+        display: none;
+      }
     }
   }
-}
 
-.header-link h1 {
-  margin: 0;
+  .header-link h1 {
+    margin: 0;
+  }
 }
