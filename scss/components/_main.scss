@@ -12,7 +12,7 @@
   align-items: center;
 
   .hero-texto {
-    z-index: 11111;
+    z-index: 1;
     padding: 20px 24px;
     h2 {
       color: $color-white;
@@ -171,4 +171,40 @@
   iframe {
     width: 450px;
   }
+}
+
+// CONTACTO
+
+.contacto-bg {
+  background-image: url(../../img/formulario.jpg);
+  height: 400px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario {
+    background-color: $color-white;
+    margin: -10rem auto 0 auto;
+    width: 90%;
+    padding: 40px;
+}
+
+.campo {
+    display: flex;
+}
+
+.campo-label {
+  flex: 0 0 144px;
+}
+
+.campo-field {
+    flex: 1;
+}
+
+.campo-field-textarea {
+
 }
