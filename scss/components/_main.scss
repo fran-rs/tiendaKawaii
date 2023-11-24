@@ -187,24 +187,57 @@
 }
 
 .formulario {
-    background-color: $color-white;
-    margin: -10rem auto 0 auto;
-    width: 90%;
-    padding: 40px;
+  background-color: $color-white;
+  margin: -20rem auto 0 auto;
+  width: 90%;
+  padding: 40px 20px;
+  border-radius: 4px;
 }
 
 .campo {
-    display: flex;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  gap: 2rem;
+
+  &.btn {
+    justify-content: end;
+    padding: 0;
+  }
 }
 
 .campo-label {
   flex: 0 0 144px;
+  text-align: right;
+  padding-right: 2rem;
+  display: none;
 }
 
 .campo-field {
-    flex: 1;
+  flex: 1;
+  border: 1px solid $color-gray;
+  padding: 8px 12px;
 }
 
 .campo-field-textarea {
+  flex: 1;
+  border: 1px solid $color-gray;
+  height: 10rem;
+  padding: 8px 12px;
+}
 
+.boton-primario {
+  border: none;
+  background-color: $color-heading;
+  padding: 8px 20px;
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  color: $color-accent;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05, 1.05);
+    opacity: 0.9;
+  }
 }

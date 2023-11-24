@@ -97,6 +97,8 @@ h3 {
       .fixed .header .header-link .header-logo {
         max-width: 80px;
         display: none; }
+    .fixed .header nav {
+      margin-top: 0; }
   .fixed .header-link h1 {
     margin: 0; }
 
@@ -243,18 +245,49 @@ h3 {
 
 .formulario {
   background-color: #ffffff;
-  margin: -10rem auto 0 auto;
+  margin: -20rem auto 0 auto;
   width: 90%;
-  padding: 40px; }
+  padding: 40px 20px;
+  border-radius: 4px; }
 
 .campo {
-  display: flex; }
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+  gap: 2rem; }
+  .campo.btn {
+    justify-content: end;
+    padding: 0; }
 
 .campo-label {
-  flex: 0 0 144px; }
+  flex: 0 0 144px;
+  text-align: right;
+  padding-right: 2rem;
+  display: none; }
 
 .campo-field {
-  flex: 1; }
+  flex: 1;
+  border: 1px solid #555555;
+  padding: 8px 12px; }
+
+.campo-field-textarea {
+  flex: 1;
+  border: 1px solid #555555;
+  height: 10rem;
+  padding: 8px 12px; }
+
+.boton-primario {
+  border: none;
+  background-color: #ff69b4;
+  padding: 8px 20px;
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  color: #e6e6fa;
+  cursor: pointer; }
+  .boton-primario:hover {
+    transform: scale(1.05, 1.05);
+    opacity: 0.9; }
 
 .footer {
   background-color: #e9a4b4;
@@ -332,5 +365,11 @@ h3 {
 @media (min-width: 990px) {
   .products .producto {
     width: 250px; }
+  .campo .campo-label {
+    display: block; }
+  .campo .boton-primario {
+    width: auto; }
+  .formulario {
+    width: 70%; }
   .fixed .header {
     display: flex; } }

@@ -86,6 +86,20 @@
   .products .producto {
     width: 250px;
   }
+
+  .campo {
+    .campo-label {
+      display: block;
+    }
+
+    .boton-primario {
+      width: auto;
+    }
+  }
+
+  .formulario {
+    width: 70%;
+  }
   .fixed {
     .header {
       display: flex;
